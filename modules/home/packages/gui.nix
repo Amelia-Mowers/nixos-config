@@ -1,6 +1,10 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
+    blockbench
+    code-cursor
+    discord
+    
     ## Multimedia
     audacity
     gimp

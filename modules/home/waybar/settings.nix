@@ -21,7 +21,7 @@ let
 in
 {
   programs.waybar.settings.mainBar = with custom; {
-    position = "bottom";
+    position = "top";
     layer = "top";
     height = 28;
     margin-top = 0;
@@ -31,10 +31,10 @@ in
     modules-left = [
       "custom/launcher"
       "hyprland/workspaces"
-      "tray"
     ];
     modules-center = [ "clock" ];
     modules-right = [
+      "tray"
       "cpu"
       "memory"
       (if (host == "desktop") then "disk" else "")
@@ -51,7 +51,7 @@ in
           today = "<span color='#98971A'><b>{}</b></span>";
         };
       };
-      format = "  {:%H:%M}";
+      format = "{:%a %m/%d %I:%M%p}";
       tooltip = "true";
       tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
       format-alt = "  {:%d/%m}";
