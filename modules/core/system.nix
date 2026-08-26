@@ -32,5 +32,5 @@
   time.timeZone = "America/Los_Angeles";
   i18n.defaultLocale = "en_US.UTF-8";
   nixpkgs.config.allowUnfree = true;
-  system.stateVersion = "26.05";
+  system.stateVersion = "24.05";
 }
