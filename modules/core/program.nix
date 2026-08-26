@@ -12,5 +12,8 @@
 
     nix-ld.enable = true;
     nix-ld.libraries = with pkgs; [ ];
+    hyprland = {
+      enable = true;
+    };
   };
 }

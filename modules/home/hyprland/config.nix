@@ -29,6 +29,15 @@ in
         "[workspace 2 silent] ${terminal}"
       ];
 
+      env = [
+        "LIBVA_DRIVER_NAME,nvidia"
+        "XDG_SESSION_TYPE,wayland"
+        "GBM_BACKEND,nvidia-drm"
+        "__GLX_VENDOR_LIBRARY_NAME,nvidia"
+        "WLR_NO_HARDWARE_CURSORS,1"
+        "XCURSOR_SIZE,24"
+      ];
+
       input = {
         kb_layout = "us,fr";
         kb_options = "grp:alt_caps_toggle";
@@ -152,12 +161,12 @@ in
         "$mainMod, Return, exec, ${terminal} --gtk-single-instance=true"
         "ALT, Return, exec, [float; size 1111 700] ${terminal}"
         "$mainMod SHIFT, Return, exec, [fullscreen] ${terminal}"
-        "$mainMod, B, exec, [workspace 1 silent] ${browser}"
+        "$mainMod, B, exec, zen-beta"
         "$mainMod, Q, killactive,"
         "$mainMod, F, fullscreen, 0"
         "$mainMod SHIFT, F, fullscreen, 1"
         "$mainMod, Space, exec, toggle-float"
-        "$mainMod, D, exec, vicinae vicinae://toggle"
+        "$mainMod, D, exec, rofi -show drun || pkill rofi"
         "$mainMod SHIFT, D, exec, webcord --enable-features=UseOzonePlatform --ozone-platform=wayland"
         "$mainMod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
         "$mainMod, Escape, exec, swaylock"
