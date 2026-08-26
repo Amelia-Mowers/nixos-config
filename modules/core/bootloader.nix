@@ -2,12 +2,12 @@
 {
   boot = {
     loader = {
-      systemd-boot.enable = true;
-      efi.canTouchEfiVariables = true;
-      systemd-boot.configurationLimit = 10;
+      grub.enable = true;
+      grub.device = "/dev/sdb";
+      grub.useOSProber = true;
     };
 
-    kernelPackages = pkgs.linuxPackages_latest;
+    kernelPackages = pkgs.linuxPackages_6_6;
     kernelModules = [ "hid-nintendo" ];
     supportedFilesystems = [ "ntfs" ];
   };

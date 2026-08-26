@@ -3,6 +3,15 @@
   wayland.windowManager.hyprland.settings = {
     "$mod" = "SUPER";
 
+    env = [
+      "LIBVA_DRIVER_NAME,nvidia"
+      "XDG_SESSION_TYPE,wayland"
+      "GBM_BACKEND,nvidia-drm"
+      "__GLX_VENDOR_LIBRARY_NAME,nvidia"
+      "WLR_NO_HARDWARE_CURSORS,1"
+      "XCURSOR_SIZE,24"
+    ];
+
     input = {
       kb_layout = "us,fr";
       kb_options = "grp:alt_caps_toggle";
