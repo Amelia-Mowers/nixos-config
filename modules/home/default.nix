@@ -8,7 +8,7 @@
     ./btop.nix                        # resouces monitor 
     ./cava.nix                        # audio visualizer
     ./direnv.nix
-    ./discord.nix                     # discord
+    # ./discord.nix                     # discord
     ./fastfetch/fastfetch.nix         # fetch tool
     ./fzf.nix                         # fuzzy finder
     ./gaming.nix                      # packages related to gaming
@@ -31,11 +31,11 @@
     ./../../scripts/scripts.nix       # personal scripts
     ./ssh.nix                         # ssh config
     ./spicetify.nix                   # spotify client
-    ./superfile/superfile.nix         # terminal file manager
+    # ./superfile/superfile.nix         # terminal file manager
     ./swaylock.nix                    # lock screen
     ./swayosd.nix                     # brightness / volume wiget
     ./swaync/swaync.nix               # notification deamon
-    ./vscodium                        # vscode fork
+    # ./vscodium                        # vscode fork
     ./waybar                          # status bar
     ./waypaper.nix                    # GUI wallpaper picker
     ./xdg-mimes.nix                   # xdg config
