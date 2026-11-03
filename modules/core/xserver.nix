@@ -6,10 +6,8 @@
       xkb.layout = "us,fr";
     };
 
-    displayManager.autoLogin = {
-      enable = true;
-      user = "${username}";
-    };
+    # Password at the LightDM login screen (no autologin), straight into Hyprland.
+    displayManager.defaultSession = "hyprland";
     libinput = {
       enable = true;
     };

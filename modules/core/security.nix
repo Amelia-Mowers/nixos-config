@@ -6,7 +6,6 @@
 
     pam.services = {
       swaylock.enableGnomeKeyring = true;
-      hyprlock.enableGnomeKeyring = true;
     };
   };
 }
