@@ -48,6 +48,10 @@
       middle_click_paste = false;
 
       disable_autoreload = false;
+
+      # If the screen locker (Dailies Lock) crashes, let its restart take the lock back
+      # instead of leaving the red "lockscreen died" screen.
+      allow_session_lock_restore = true;
     };
 
     dwindle = {

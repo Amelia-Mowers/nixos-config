@@ -28,6 +28,12 @@
     };
     superfile.url = "github:yorukot/superfile";
     zen-browser.url = "github:0xc000022070/zen-browser-flake/beta";
+
+    # Local project: run `nix flake update dailies-lock` after changing it.
+    dailies-lock = {
+      url = "path:/home/mia/dailies-lock";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
